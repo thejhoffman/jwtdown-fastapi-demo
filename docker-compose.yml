@@ -1,0 +1,31 @@
+volumes:
+  jwtdow-db-data:
+    external: true
+
+services:
+  db:
+    image: postgres:14.5-bullseye
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: jwt_user
+      POSTGRES_DB: jwt_db
+    ports:
+      - "15432:5432"
+    volumes:
+      - jwtdow-db-data:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: api
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./api:/app
+    ports:
+      - "8000:8000"
+    environment:
+      # SIGNING_KEY: <key>
+      WAIT_HOSTS: db:5432
+      WAIT_BEFORE: 5
+      WAIT_TIMEOUT: 60
+      DATABASE_URL: postgresql://jwt_user:password@db/jwt_db
+      PORT: 8000
