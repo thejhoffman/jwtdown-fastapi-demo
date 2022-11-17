@@ -23,7 +23,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      # SIGNING_KEY: <key>
+      SIGNING_KEY: eyJhbGciOiJIUzI1NiJ9.ew0KICAic3ViIjogIjEyNDU4OTY1NzAiLA0KICAibmFtZSI6ICJGYXJ0IiwNCiAgImlhdCI6IDE1MTYyMzkwMjINCn0.Ejcdfa_mJE-j_vjPx0M7q8Zq99AwWwc2Z9cyB57N6d0
       WAIT_HOSTS: db:5432
       WAIT_BEFORE: 5
       WAIT_TIMEOUT: 60
