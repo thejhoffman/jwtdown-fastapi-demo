@@ -1,7 +1,7 @@
 # JWTdown for FastAPI Demo
-This repo is meant to used as guide for following along side the video for Hack Reactor's Week 14 lesson titled "D4: Backend Authentication with JWTdown"
+This repo is meant to bed used as guide for following along side the video for Hack Reactor's Week 14 lesson titled "D4: Backend Authentication with JWTdown"
 
-The database used in the this repo is a PostgreSQL database. MongoDB is also an option, but not configured here.
+The database used in this repo is a PostgreSQL database. MongoDB is also an option, but not configured here.
 
 This repo contains two branches: `main` and `final`
 * `main` is blank starting point for following along with the video
@@ -11,7 +11,7 @@ Structuring the database and queries is not covered in the video and intentional
 
 ---
 Note for SIGNING_KEY:
-* Key needs to be created manually.
+* Key needs to be created manually
 * This should also be its own environment variable using `.env`
 * One can be generated using this site: [https://8gwifi.org/jwsgen.jsp](https://8gwifi.org/jwsgen.jsp)
 ---
