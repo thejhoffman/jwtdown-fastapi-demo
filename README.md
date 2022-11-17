@@ -1,5 +1,5 @@
 # JWTdown for FastAPI Demo
-This repo is meant to bed used as guide for following along side the video for Hack Reactor's Week 14 lesson titled "D4: Backend Authentication with JWTdown"
+This repo is meant to be used as guide for following along side the video for Hack Reactor's Week 14 lesson titled "D4: Backend Authentication with JWTdown"
 
 The database used in this repo is a PostgreSQL database. MongoDB is also an option, but not configured here.
 
