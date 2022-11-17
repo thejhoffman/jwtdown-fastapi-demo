@@ -24,7 +24,7 @@ docker compose up
 
 ## Useful commands for viewing data in the database
 
-```ps
+```powershell
 <# To connect to docker container shell #>
 docker exec -it <container_id> /bin/bash
 
