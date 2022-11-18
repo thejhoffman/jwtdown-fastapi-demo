@@ -11,9 +11,9 @@ Structuring the database and queries is not covered in the video and intentional
 
 ---
 Note for SIGNING_KEY:
-* Key needs to be created manually
+* Key needs to be created manually can be anything
+* Ideally should 20-40 characters long
 * This should also be its own environment variable using `.env`
-* One can be generated using this site: [https://8gwifi.org/jwsgen.jsp](https://8gwifi.org/jwsgen.jsp)
 ---
 ## Steps to run the docker containers
 ```
